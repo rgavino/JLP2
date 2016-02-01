@@ -20,7 +20,7 @@ public class StudyGroupTest {
 		for(Student student: testStudents) {
 			testGroup.addStudent(student);
 		}
-		Assert.assertEquals(testGroup.getGroupSize(), testStudents.size());
+		Assert.assertEquals(testGroup.getGroupSize(), testStudents.size() + 1);
 		
 		Student testStudent = testStudents.get(0);
 		Student returnedStudent = testGroup.getStudent(testStudent.getId());
