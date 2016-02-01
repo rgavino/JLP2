@@ -29,10 +29,10 @@ public class StudyGroupTest {
 		Assert.assertEquals(returnedStudent.getName(), testStudent.getName());
 		Assert.assertEquals(returnedStudent.getScore(), testStudent.getScore());
 		
-		//testGroup.removeStudent(testStudent.getId());
-		//Assert.assertEquals(testGroup.getGroupSize(), testStudents.size() - 1);
+		testGroup.removeStudent(testStudent.getId());
+		Assert.assertEquals(testGroup.getGroupSize(), testStudents.size() - 1);
 		
-		//testGroup.clear();
-		//Assert.assertEquals(testGroup.getGroupSize(), 0);
+		testGroup.clear();
+		Assert.assertEquals(testGroup.getGroupSize(), 0);
 	}
 }
